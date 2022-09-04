@@ -1,4 +1,4 @@
-# React.js Snippet
+# React.js Snippets
 
 ## [1. Grid Pattern](./Grid_Pattern/Grid.md)
 
