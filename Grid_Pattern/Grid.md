@@ -18,7 +18,9 @@ const GridBox = (props) => {
     temp = temp + "auto ";
   }
 
-  document.getElementById("GridContainer").style.gridTemplateColumns = temp;
+  setTimeout(() => {
+      document.getElementById("GridContainer").style.gridTemplateColumns = temp;
+    }, 0);
   
   const list = []
   for (let i = 0; i < props.NoOfBoxes; i++) {
@@ -105,25 +107,5 @@ export default App;
 />
 ```
 <img src="./BoxGrid_img3.jpg" width="600"/>
-
-<br>
-
-## Note:
-You may face this issue that grid is not displaying. In that case follow the following steps:
-- Step 1: Comment out Line No. 9 in BoxGrid.js and save and compile the app
-  ```javascript
-  // document.getElementById("GridContainer").style.gridTemplateColumns = temp;
-  ```
-  
-  Above step will display boxes in a stack
-
-  <img src="./BoxGrid_img4.jpg" width="600"/>
-
-  <br>
-
-- Step 2: Undo the comment from Line which was previously commented and again save and compile the app.
-  ```javascript
-  document.getElementById("GridContainer").style.gridTemplateColumns = temp;
-  ```
 
 ## [Go Back To Main Page](../README.md)
