@@ -18,7 +18,6 @@ const GridBox = (props) => {
   for(let i = 0; i < props.BoxesInARow; i++){
     temp = temp + "auto ";
   }
-  console.log(temp);
 
   document.getElementById("GridContainer").style.gridTemplateColumns = temp;
   
